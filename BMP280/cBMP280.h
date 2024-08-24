@@ -1,7 +1,6 @@
+#pragma once
 #ifndef CBMP280_H
 #define CBMP280_H
-
-#pragma once
 
 #include <cstdint>
 #include "cifI2C.h"
@@ -18,7 +17,6 @@ private:
     cifI2C *ptI2C;    
     uint32_t sampleID = 0;
 
-
     uint16_t dig_T1;
     int16_t dig_T2;
     int16_t dig_T3; 
@@ -33,7 +31,6 @@ private:
     int16_t dig_P9;
     BMP280_S32_t t_fine;
 
-
 public:
     cBMP280();
     ~cBMP280();
@@ -46,7 +43,5 @@ private:
     double compensate_T_double(BMP280_S32_t adc_T);
     double compensate_P_double(BMP280_S32_t adc_P);
 };
-
-
 
 #endif

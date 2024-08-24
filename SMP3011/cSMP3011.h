@@ -1,7 +1,6 @@
+#pragma once
 #ifndef CSMP3011_H
 #define CSMP3011_H
-
-#pragma once
 
 #include <cstdint>
 #include "cifI2C.h"

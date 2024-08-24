@@ -1,12 +1,6 @@
-/*
- * cbspI2C.h
- *
- *  Created on: 12 de abr. de 2021
- *      Author: henrique.coser
- */
-
-#ifndef BSP_ESP32_CBSPI2C_H_
-#define BSP_ESP32_CBSPI2C_H_
+#pragma once
+#ifndef _CBSPI2C_H_
+#define _CBSPI2C_H_
 
 #include <stdint.h>
 #include "driver/i2c_master.h"
@@ -34,4 +28,4 @@ class cbspI2C : public cifI2C
 		virtual bool masterWrite(uint8_t address, uint8_t *ptBuffer, uint32_t len );
 };
 
-#endif /* BSP_ESP32_CBSPI2C_H_ */
+#endif /* _CBSPI2C_H_ */

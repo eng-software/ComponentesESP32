@@ -1,10 +1,3 @@
-/* 
-* cifI2C.h
-*
-* Created: 23/11/2020 14:49:40
-* Author: henrique.coser
-*/
-
 #ifndef __CIFI2C_H__
 #define __CIFI2C_H__
 

@@ -1,32 +1,12 @@
-/*
- * cbspI2C.cpp
- *
- *  Created on: 12 de abr. de 2021
- *      Author: henrique.coser
- */
-
 #include "cbspI2C.h"
 #include "freertos/FreeRTOS.h"
 
-
-#define I2C_MASTER_TX_BUF_DISABLE 0 /*!< I2C master doesn't need buffer */
-#define I2C_MASTER_RX_BUF_DISABLE 0 /*!< I2C master doesn't need buffer */
-#define WRITE_BIT I2C_MASTER_WRITE  /*!< I2C master write */
-#define READ_BIT I2C_MASTER_READ    /*!< I2C master read */
-#define ACK_CHECK_EN 0x1            /*!< I2C master will check ack from slave*/
-#define ACK_CHECK_DIS 0x0           /*!< I2C master will not check ack from slave */
-#define ACK_VAL i2c_ack_type_t::I2C_MASTER_ACK                 /*!< I2C ack value */
-#define NACK_VAL i2c_ack_type_t::I2C_MASTER_NACK                /*!< I2C nack value */
-
-
 cbspI2C::cbspI2C()
 {
-	// Auto-generated constructor stub
 }
 
 cbspI2C::~cbspI2C()
 {
-	// Auto-generated destructor stub
 }
 
 void cbspI2C::init(i2c_port_t i2c_port, gpio_num_t i2c_gpio_sda, gpio_num_t i2c_gpio_scl)
